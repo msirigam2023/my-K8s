@@ -5,8 +5,9 @@ metadata:
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
+  ingressClassName: nginx
   rules:
-    - host: <your-domain.com>
+    - host: java-app.example.com  # Replace with your real domain
       http:
         paths:
           - path: /
